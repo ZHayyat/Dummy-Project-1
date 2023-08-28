@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Project</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" >
+    <ul class="nav-list">
+        <li>
+            <a href="#" style="color: white;">
+              <img src="images/download.png" alt="Home" style="width: 25px; height: 20px; vertical-align: middle; margin-right: 5px; text-decoration: none;">
+               Logo
+            </a>
+          </li>
+      <li><a style="color: white; cursor: pointer;" onclick="scrollToTeam()">Team</a></li>
+      <li><a style="color: white; cursor: pointer;" onclick="scrollToWork()">Work</a></li>
+      <li><a style="color: white; cursor: pointer;" onclick="scrollToWork()">Price</a></li>
+      <li><a style="color: white; cursor: pointer;" onclick="scrollTo('contact')">Contact Us</a></li>
+      <li class="dropdown">
+        <a style="color: white; cursor: pointer;">dropdown</a>
+        <div class="dropdown-content">
+          <a style="color: white; cursor: pointer;" onclick="scrollToWork()">Service 1</a>
+          <a style="color: white; cursor: pointer;" onclick="scrollToWork()">Service 2</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Background Picture Section -->
+  <section class="background-section" style="background-image: url('images/8.jpg');">
+    <h2>Welcome to Our Website</h2>
+    <p style="text-align: end; padding: 10%;"></p>
+</section>
+
+  <!-- Our Team Section -->
+  <section class="our-team" id="Team">
+    <h2>Our Team</h2>
+    <p>Meet the team - our office rats:</p>
+    <div class="team-members">
+      <div class="team-member">
+        <img src="images/1.jpg" alt="Team Member 1">
+        <h3>Islam AlZatary</h3>
+        <p>Web Desinger</p>
+      </div>
+      <div class="team-member">
+        <img src="images/2.jpg" alt="Team Member 2">
+        <h3>Tayseer Emam</h3>
+        <p>Support</p>
+      </div>
+      <div class="team-member">
+        <img src="images/3.jpg" alt="Team Member 3">
+        <h3>Eman Subhi</h3>
+        <p>Boss man</p>
+      </div>
+
+      <div class="team-member">
+        <img src="images/4.jpg" alt="Team Member 3">
+        <h3>Reem Yakoub</h3>
+        <p>Fixer</p>
+      </div>
+      <!-- Repeat for other team members -->
+    </div>
+  </section>
+  
+
+  <!-- Our Work Section -->
+  <section class="our-work" id="work" style="background-color: black; display: flex; align-items: center; padding: 50px 0;">
+    <div class="content" style="color: white; padding-left: 0%; width: 30%;">
+      <h2>Our Work</h2>
+      <p>This is a description of our work section. You can provide some information about the work you've done here.</p>
+    </div>
+    <div class="work-container" style="width: 100%;">
+      <div class="work-item">
+        <img src="images/5.jpg" alt="Work 1">
+        <div class="work-content">
+          <h3 style="color: white;">Customer 1</h3>
+          <h4 style="color: white;">Trade</h4>
+          <h5 style="color: white;">blablabla</h5>
+          <h5 style="color: white;">blablabla</h5>
+          <h5 style="color: white;">blablabla</h5>
+          <h5 style="color: white;">blablabla</h5>
+        </div>
+      </div>
+  
+      <div class="work-item">
+        <img src="images/6.jpg" alt="Work 1">
+        <div class="work-content">
+          <h3 style="color: white;">Customer 1</h3>
+          <h4 style="color: white;">Trade</h4>
+          <h5 style="color: white;">blablabla</h5>
+          <h5 style="color: white;">blablabla</h5>
+          <h5 style="color: white;">blablabla</h5>
+          <h5 style="color: white;">blablabla</h5>
+        </div>
+      </div>
+  
+      <div class="work-item">
+        <img src="images/7.jpg" alt="Work 1">
+        <div class="work-content">
+          <h3 style="color: white;">Customer 1</h3>
+          <h4 style="color: white;">Trade</h4>
+          <h5 style="color: white;">blablabla</h5>
+          <h5 style="color: white;">blablabla</h5>
+          <h5 style="color: white;">blablabla</h5>
+          <h5 style="color: white;">blablabla</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="Contact"  style="background-color: rgb(245, 245, 237); padding-left: 5%;">
+    <h2 style="text-align: center;">Contact Us</h2>
+    <div class="contact-container" style="align-items:center;">
+      <div class="contact-form">
+        <h3>Get in Touch</h3>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+  
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div class="address-info">
+        <div class="info">
+          <img src="images/images.png" alt="Address" class="icon "  style="width: 25px; height: 20px; vertical-align: middle; margin-right: 5px; text-decoration: none;">
+          <h3>Address</h3>
+          <p>123 Street, City</p>
+          <p>Country</p>
+        </div>
+        
+        <div class="info">
+          <img src="images/images (1).png" alt="Phone" class="icon" style="width: 25px; height: 20px; vertical-align: middle; margin-right: 5px; text-decoration: none;">
+          <h3>Phone</h3>
+          <p>+123 456 7890</p>
+        </div>
+        
+        <div class="info">
+          <img src="images/wow.jpg" alt="Email" class="icon" style="width: 25px; height: 20px; vertical-align: middle; margin-right: 5px; text-decoration: none;">
+          <h3>Email</h3>
+          <p>info@example.com</p>
+        </div>
+      </div>
+      
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-icons">
+      <h1 style="padding: 1%;">Follow Us</h1>
+      <a style="color: white;" href="#"><img src="images/facebook.png " alt="Facebook"></a>
+      <a style="color: white;" href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a style="color: white;" href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+   
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+<script>
+    function scrollToWork() {
+      const workSection = document.getElementById("work");
+      window.scrollTo({
+        top: workSection.offsetTop,
+        behavior: "smooth"
+      });
+    }
+  </script>
+</html>
+
